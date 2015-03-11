@@ -32,5 +32,5 @@ This will install in /node_modules all the dependencies for the project as deter
 
 Running Grunt tasks can be achieved through command line at the root of the project.
 ```
-$ grunt <node_module>   // runs the specific node_module specific e.g. watch 
+$ grunt <node_module>   // runs the specific node_module e.g. watch 
 ```
