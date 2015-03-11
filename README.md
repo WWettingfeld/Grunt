@@ -9,9 +9,8 @@ This is a quick example on how to use Grunt.js from the very beginning with node
 
 ## Install Grunt.js
 
-1. Run Node.js
-2. Execute "$ npm install -g grunt-cli"
-3. Ensure Grunt is installed with "$ grunt --version"
+1. Execute "$ npm install -g grunt-cli"
+2. Ensure Grunt is installed with "$ grunt --version"
 
 ## Creating a Project
 
