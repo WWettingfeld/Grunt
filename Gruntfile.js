@@ -28,7 +28,7 @@ module.exports = function(grunt){
 		uglify: {
 			build: {
 				files: {
-					'build/js/base.min.<%= grunt.template.today("yyyymmdd") %>.js': ['assets/js/base.js', 'assets/js/base2.js']
+					'bin/js/base.min.<%= grunt.template.today("yyyymmdd") %>.js': ['assets/js/base.js', 'assets/js/base2.js']
 				}
 			}
 		},
@@ -40,7 +40,7 @@ module.exports = function(grunt){
 			},
 			dist: {
 				files: {
-					'build/index.html': ['index.html']
+					'bin/index.html': ['index.html']
 				}
 			}
 		}
