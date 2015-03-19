@@ -1,0 +1,15 @@
+<!-- Copies the application files to the corresponding directory -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="DeployApp">
+		<Message Text="Copying application files..." />
+		<ItemGroup>
+			<ApplicationFiles Include="$(BinPath)\**\*.*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(ApplicationFiles)" DestinationFolder="$(OutputDir)\"/>
+	</Target>
+	
+	<PropertyGroup>
+		<BinPath>bin</BinPath>
+		<OutputDir>C:\</AssemblyName>
+	</PropertyGroup>
+</Project>
