@@ -1,4 +1,4 @@
 function Bob() {
-	return 2523894;
-	
+    'use strict';
+    return 2523894;
 }

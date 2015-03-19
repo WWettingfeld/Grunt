@@ -20,14 +20,9 @@ module.exports = function(grunt){
 				src: ['index.html']
 			}
 		},
-		watch: {
-			html: {
-				files: ['index.html'],
-				tasks: ['htmlhint']
-			},
-			js: {
-				files: ['assets/js/base.js', 'assets/js/base2.js'],
-				tasks: ['uglify', 'processhtml']
+		jslint: {
+			client: {
+				src: ['assets/js/*.js']
 			}
 		},
 		uglify: {
@@ -51,6 +46,6 @@ module.exports = function(grunt){
 		}
     });
 
-    grunt.registerTask('default', []);
+    grunt.registerTask('default', ['htmlhint', 'jslint', 'uglify', 'processhtml']);
 
 };
